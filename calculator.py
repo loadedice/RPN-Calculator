@@ -44,7 +44,7 @@ def evaluate(expression):
             result = OPERATOR[token](x, y)
             # Push the result back onto the stack
             stack.append(result)
-        elif token.isnumeric():
+        elif token.isdigit():
             # If we've found a number, convert it to an int and push it to the stack
             stack.append(int(token))
         else:
