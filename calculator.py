@@ -23,12 +23,13 @@ OPERATOR = {
         '>>' : lambda x, y: x >> y
         }
 
-"""
-Evaluates an postfix expression
-
-Returns the result on success raises SyntaxError when there is an error.
-"""
 def evaluate(expression):
+    """
+    Evaluates an postfix expression
+
+    Returns the result on success raises SyntaxError when there is an error.
+    """
+
     # Create a new empty stack for each expression and tokenise the expression
     stack = []
     tokens = expression.split()
