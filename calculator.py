@@ -54,7 +54,7 @@ def evaluate(expression):
 
     # If we have anything other than 1 thing on the stack, then the input is bad
     if len(stack) != 1:
-        erorr = "Reached end of expression, stack does not have 1 value. Stack trace: {}".format(stack)
+        error = "Reached end of expression, stack does not have 1 value. Stack trace: {}".format(stack)
         raise SyntaxError(error)
     else:
         return stack.pop()
