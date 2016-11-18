@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-This is a short python script to evaluate mathematical expressions in infix notation
+This is a short python script to evaluate mathematical expressions in postfix notation
 It only works with operators that take 2 arguments at the moment
 """
 
@@ -24,7 +24,7 @@ OPERATOR = {
         }
 
 """
-Evaluates an infix expression
+Evaluates an postfix expression
 
 Returns the result on success raises SyntaxError when there is an error.
 """
